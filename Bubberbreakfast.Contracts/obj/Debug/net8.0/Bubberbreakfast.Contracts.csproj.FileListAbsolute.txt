@@ -1,0 +1,11 @@
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast.Contracts\bin\Debug\net8.0\Bubberbreakfast.Contracts.deps.json
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast.Contracts\bin\Debug\net8.0\Bubberbreakfast.Contracts.dll
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast.Contracts\bin\Debug\net8.0\Bubberbreakfast.Contracts.pdb
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast.Contracts\obj\Debug\net8.0\Bubberbreakfast.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast.Contracts\obj\Debug\net8.0\Bubberbreakfast.Contracts.AssemblyInfoInputs.cache
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast.Contracts\obj\Debug\net8.0\Bubberbreakfast.Contracts.AssemblyInfo.cs
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast.Contracts\obj\Debug\net8.0\Bubberbreakfast.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast.Contracts\obj\Debug\net8.0\Bubberbreakfast.Contracts.dll
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast.Contracts\obj\Debug\net8.0\refint\Bubberbreakfast.Contracts.dll
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast.Contracts\obj\Debug\net8.0\Bubberbreakfast.Contracts.pdb
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast.Contracts\obj\Debug\net8.0\ref\Bubberbreakfast.Contracts.dll
