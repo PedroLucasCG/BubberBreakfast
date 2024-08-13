@@ -1,26 +1,31 @@
-using Bubberbreakfast.Contracts.Breakfast.BreakfastResponse;
 using Bubberbreakfast.Models;
 using Bubberbreakfast.ServiceErrors;
 using ErrorOr;
-using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
 namespace Bubberbreakfast.Services.Breakfasts;
 public class BreakfastService : IBreakfastService
 {
     private static readonly Dictionary<Guid, Breakfast> _breakfasts = new Dictionary<Guid, Breakfast>();
-    public void CreateBreakfast(Breakfast breakfast)
+    public ErrorOr<Created> CreateBreakfast(Breakfast breakfast)
     {
         _breakfasts.Add(breakfast.Id, breakfast);
+
+        return Result.Created;
     }
 
-    public void DeleteBreakfast(Guid id)
+    public ErrorOr<Deleted> DeleteBreakfast(Guid id)
     {
         _breakfasts.Remove(id);
+
+        return Result.Deleted;
     }
 
-    public void UpsertBreakfast(Breakfast breakfast, Guid id)
+    public ErrorOr<UpsertedBreakfastResult> UpsertBreakfast(Breakfast breakfast, Guid id)
     {
-        _breakfasts[id] = breakfast;  
+        var isNewlyCreated = !_breakfasts.ContainsKey(breakfast.Id);
+        _breakfasts[id] = breakfast;
+
+        return new UpsertedBreakfastResult(isNewlyCreated);
     }
 
     public ErrorOr<Breakfast> GetBreakfast(Guid id)

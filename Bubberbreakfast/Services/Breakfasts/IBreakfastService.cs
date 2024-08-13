@@ -7,5 +7,5 @@ public interface IBreakfastService {
     ErrorOr<Created> CreateBreakfast(Breakfast breakfast);
     ErrorOr<Deleted> DeleteBreakfast(Guid id);
     ErrorOr<Breakfast> GetBreakfast(Guid id);
-    ErrorOr<Updated> UpsertBreakfast(Breakfast breakfast, Guid id);
+    ErrorOr<UpsertedBreakfastResult> UpsertBreakfast(Breakfast breakfast, Guid id);
 }
