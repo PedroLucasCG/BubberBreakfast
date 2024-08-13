@@ -27,3 +27,5 @@ C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbrea
 C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast\obj\Debug\net8.0\Bubberbreakfast.pdb
 C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast\obj\Debug\net8.0\Bubberbreakfast.genruntimeconfig.cache
 C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast\obj\Debug\net8.0\ref\Bubberbreakfast.dll
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast\bin\Debug\net8.0\ErrorOr.dll
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast\obj\Debug\net8.0\Bubberbreakfast.sourcelink.json

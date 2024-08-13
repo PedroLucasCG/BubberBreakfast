@@ -3,14 +3,12 @@ using Bubberbreakfast.Contracts.Breakfast.CreateBreakfastRequest;
 using Bubberbreakfast.Contracts.Breakfast.UpsertBreakfastRequest;
 using Bubberbreakfast.Models;
 using Bubberbreakfast.Contracts.Breakfast.BreakfastResponse;
-using System.Security.Cryptography;
 using Bubberbreakfast.Services.Breakfasts;
+using ErrorOr;
 
 namespace Bubberbreakfast.Controllers.BreakfastControllers;
 
-[ApiController]
-[Route("[controller]")]
-public class BreakfastController : ControllerBase{
+public class BreakfastController : APIController{
     private readonly IBreakfastService _breakfastService;
     public BreakfastController(IBreakfastService breakfastService) {
         _breakfastService = breakfastService;
@@ -31,16 +29,7 @@ public class BreakfastController : ControllerBase{
 
         _breakfastService.CreateBreakfast(breakfast);
 
-        var response = new BreakfastResponse(
-            breakfast.Id,
-            breakfast.Name,
-            breakfast.Description,
-            breakfast.StartDateTime,
-            breakfast.EndDateTime,
-            breakfast.LastModifiedDateTime,
-            breakfast.Savory,
-            breakfast.Sweet
-        );
+        var response = MapBreakfastResponse(breakfast);
 
         return CreatedAtAction(
             actionName: nameof(CreateBreakfast),
@@ -50,19 +39,28 @@ public class BreakfastController : ControllerBase{
     }
 
     [HttpGet]
-    public IActionResult GetBreakfast(Guid id) {
-        Breakfast breakfast = _breakfastService.GetBreakfast(id);
-        var reponse = new Breakfast(
-            breakfast.Id,
-            breakfast.Name,
-            breakfast.Description,
-            breakfast.StartDateTime,
-            breakfast.EndDateTime,
-            breakfast.LastModifiedDateTime,
-            breakfast.Savory,
-            breakfast.Sweet
+    public IActionResult GetBreakfast(Guid id)
+    {
+        ErrorOr<Breakfast> getBreakfast = _breakfastService.GetBreakfast(id);
+
+        return getBreakfast.Match(
+            breakfast => Ok(MapBreakfastResponse(breakfast)),
+            errors => Problem(errors)
         );
-        return Ok(reponse);
+    }
+
+    private static Breakfast MapBreakfastResponse(Breakfast breakfast)
+    {
+        return new Breakfast(
+                    breakfast.Id,
+                    breakfast.Name,
+                    breakfast.Description,
+                    breakfast.StartDateTime,
+                    breakfast.EndDateTime,
+                    breakfast.LastModifiedDateTime,
+                    breakfast.Savory,
+                    breakfast.Sweet
+                );
     }
 
     [HttpPut]
@@ -79,19 +77,10 @@ public class BreakfastController : ControllerBase{
         );
         _breakfastService.UpsertBreakfast(breakfast, id);
 
-        var response = new BreakfastResponse(
-            breakfast.Id,
-            breakfast.Name,
-            breakfast.Description,
-            breakfast.StartDateTime,
-            breakfast.EndDateTime,
-            breakfast.LastModifiedDateTime,
-            breakfast.Savory,
-            breakfast.Sweet
-        );
+        var response = MapBreakfastResponse(breakfast);
 
         return CreatedAtAction(
-            actionName: nameof(CreateBreakfast),
+            actionName: nameof(UpsertBreakfast),
             routeValues: new {id = breakfast.Id},
             value: response
         );

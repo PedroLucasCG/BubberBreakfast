@@ -9,3 +9,4 @@ C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbrea
 C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast.Contracts\obj\Debug\net8.0\refint\Bubberbreakfast.Contracts.dll
 C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast.Contracts\obj\Debug\net8.0\Bubberbreakfast.Contracts.pdb
 C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast.Contracts\obj\Debug\net8.0\ref\Bubberbreakfast.Contracts.dll
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast.Contracts\obj\Debug\net8.0\Bubberbreakfast.Contracts.sourcelink.json
