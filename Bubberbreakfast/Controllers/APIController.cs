@@ -8,6 +8,7 @@ namespace Bubberbreakfast.Controllers;
 [Route("[controller]")]
 public class APIController : ControllerBase
 {
+    [ApiExplorerSettings(IgnoreApi = true)]
     public IActionResult Problem(List<Error> errors) {
         if (errors.All(e => e.Type == ErrorType.Validation))
         {

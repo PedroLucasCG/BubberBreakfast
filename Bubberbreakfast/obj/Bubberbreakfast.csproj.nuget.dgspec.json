@@ -108,6 +108,10 @@
             "ErrorOr": {
               "target": "Package",
               "version": "[2.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.7.0, )"
             }
           },
           "imports": [

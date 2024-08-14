@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="ErrorOr" Version="2.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.0" />
   </ItemGroup>
 
   <PropertyGroup>

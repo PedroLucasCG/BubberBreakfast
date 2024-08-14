@@ -1,10 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "nzpC3rVSTs8=",
+  "dgSpecHash": "5xO6vfgv8p0=",
   "success": true,
   "projectFilePath": "C:\\Users\\Conta\\OneDrive\\Documentos\\repositórios\\.net\\BubberBreakfast\\Bubberbreakfast\\Bubberbreakfast.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Conta\\.nuget\\packages\\erroror\\2.1.0\\erroror.2.1.0.nupkg.sha512"
+    "C:\\Users\\Conta\\.nuget\\packages\\erroror\\2.1.0\\erroror.2.1.0.nupkg.sha512",
+    "C:\\Users\\Conta\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Conta\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
+    "C:\\Users\\Conta\\.nuget\\packages\\swashbuckle.aspnetcore\\6.7.0\\swashbuckle.aspnetcore.6.7.0.nupkg.sha512",
+    "C:\\Users\\Conta\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.7.0\\swashbuckle.aspnetcore.swagger.6.7.0.nupkg.sha512",
+    "C:\\Users\\Conta\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.7.0\\swashbuckle.aspnetcore.swaggergen.6.7.0.nupkg.sha512",
+    "C:\\Users\\Conta\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.7.0\\swashbuckle.aspnetcore.swaggerui.6.7.0.nupkg.sha512"
   ],
   "logs": []
 }

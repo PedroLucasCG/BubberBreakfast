@@ -29,3 +29,8 @@ C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbrea
 C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast\obj\Debug\net8.0\ref\Bubberbreakfast.dll
 C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast\bin\Debug\net8.0\ErrorOr.dll
 C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast\obj\Debug\net8.0\Bubberbreakfast.sourcelink.json
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Conta\OneDrive\Documentos\repositórios\.net\BubberBreakfast\Bubberbreakfast\obj\Debug\net8.0\Bubberbreakfast.MvcApplicationPartsAssemblyInfo.cs
