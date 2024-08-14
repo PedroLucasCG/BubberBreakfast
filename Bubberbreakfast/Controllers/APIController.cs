@@ -1,5 +1,6 @@
 using ErrorOr;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace Bubberbreakfast.Controllers;
 
@@ -8,6 +9,22 @@ namespace Bubberbreakfast.Controllers;
 public class APIController : ControllerBase
 {
     public IActionResult Problem(List<Error> errors) {
+        if (errors.All(e => e.Type == ErrorType.Validation))
+        {
+            var modelStateDictionary = new ModelStateDictionary();
+
+            errors.ForEach( e => {
+                modelStateDictionary.AddModelError(e.Code, e.Description);
+            });
+
+            return ValidationProblem(modelStateDictionary);
+        }
+
+        if (errors.Any(e => e.Type == ErrorType.Unexpected))
+        {
+            return Problem();
+        }
+
         var firstError = errors[0];
 
         var statusCode = firstError.Type switch

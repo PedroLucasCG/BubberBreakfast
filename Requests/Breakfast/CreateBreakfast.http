@@ -2,7 +2,7 @@ POST https://localhost:7094/Breakfast
 Content-Type: application/json
 
 {
-    "name": "Vegan Sunshine",
+    "name": "V",
     "description": "Vegan everything! Join us for a healthy breakfast..",
     "startDateTime": "2022-04-08T08:00:00",
     "endDateTime": "2022-04-08T11:00:00",
